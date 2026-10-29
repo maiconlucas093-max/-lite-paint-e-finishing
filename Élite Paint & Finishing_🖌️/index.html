@@ -1091,6 +1091,101 @@
              ORÇAMENTO
         ====================================================== -->
 
+       
+<!-- CALCULADORA DE ORÇAMENTO ÉLITE PAINT -->
+<section class="paint-estimator section" id="calculadora-orcamento">
+  <div class="container">
+    <span class="eyebrow">ORÇAMENTO ESTIMADO</span>
+    <h2>Planeje sua pintura com <em>mais clareza.</em></h2>
+    <p>Informe os detalhes para calcular uma estimativa inicial.</p>
+
+    <form id="paintEstimateForm" class="paint-form">
+      <label>Seu nome
+        <input id="paintName" placeholder="Nome do cliente">
+      </label>
+
+      <label>Área aproximada (m²)
+        <input id="paintArea" type="number" min="1" value="40" required>
+      </label>
+
+      <label>Tipo de serviço
+        <select id="paintService">
+          <option value="22">Pintura interna</option>
+          <option value="28">Pintura externa / fachada</option>
+          <option value="20">Pintura de teto</option>
+          <option value="16">Preparação de paredes</option>
+          <option value="38">Acabamento especial</option>
+        </select>
+      </label>
+
+      <label>Condição da parede
+        <select id="paintCondition">
+          <option value="1">Boa</option>
+          <option value="1.18">Regular</option>
+          <option value="1.4">Precisa de muitos reparos</option>
+        </select>
+      </label>
+
+      <label>Quantidade de demãos
+        <select id="paintCoats">
+          <option value="1">1 demão</option>
+          <option value="2" selected>2 demãos</option>
+          <option value="3">3 demãos</option>
+          <option value="4">4 demãos</option>
+        </select>
+      </label>
+
+      <label>Materiais
+        <select id="paintMaterials">
+          <option value="yes">Incluir estimativa de materiais</option>
+          <option value="no">Somente mão de obra</option>
+        </select>
+      </label>
+
+      <label>Tipo de tinta
+        <select id="paintType">
+          <option value="12">Padrão</option>
+          <option value="18">Premium</option>
+          <option value="25">Especial</option>
+        </select>
+      </label>
+
+      <label>Data desejada
+        <input id="paintDate" type="date">
+      </label>
+
+      <label>Período
+        <select id="paintPeriod">
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Dia inteiro</option>
+          <option>A combinar</option>
+        </select>
+      </label>
+
+      <label>Bairro / cidade
+        <input id="paintLocation" placeholder="Local do serviço" required>
+      </label>
+
+      <div class="paint-summary" aria-live="polite">
+        <span>Total estimado</span>
+        <strong id="paintTotal">R$ 0,00</strong>
+        <p>Mão de obra: <b id="paintLabor">R$ 0,00</b></p>
+        <p>Materiais: <b id="paintMaterialCost">R$ 0,00</b></p>
+      </div>
+
+      <button class="luxury-button primary" type="submit">
+        Enviar orçamento pelo WhatsApp ↗
+      </button>
+
+      <p class="paint-disclaimer">
+        Valores estimativos. O preço definitivo depende da avaliação
+        das medidas, da superfície e dos materiais necessários.
+      </p>
+    </form>
+  </div>
+</section>
+        
         <section
             class="contact section"
             id="contato"
