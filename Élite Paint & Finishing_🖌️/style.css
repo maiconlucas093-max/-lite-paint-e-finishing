@@ -1556,7 +1556,18 @@ button {
     filter: blur(100px);
 }
 
+.contact-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    align-items: center;
+}
 
+.contact-copy {
+    max-width: 720px;
+}
 
 .contact-copy h2 {
     margin-top: 20px;
